@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="serviceB:war exploded">
+    <output-path>$PROJECT_DIR$/serviceB/target/serviceB</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="serviceB" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="service-A-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="serviceA" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/serviceB/target/serviceB/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="serviceB/web/Web" />
+    </root>
+  </artifact>
+</component>
